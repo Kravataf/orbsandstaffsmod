@@ -1,0 +1,175 @@
+{
+  "id_map": {
+    "ENTITY": 2
+  },
+  "mod_elements": [
+    {
+      "name": "WoodenStaff",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "OrbOfLightning",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OrbOfFire",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OrbOfGround",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CraftWoodenStaff",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OrbiumOre",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OrbiumIngot",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SmeltOrbiumIngot",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WoodenStaffMagic",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Enderium",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumIngot",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SmeltEnderiumIngot",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OnSCT",
+      "type": "tab",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmptyOrb",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ScrollOfLightning",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.woodenstaff.name": "Wooden Staff",
+      "item.scrolloflightning.name": "Scroll Of Lightning",
+      "item.orbiumingot.name": "Orbium Ingot",
+      "tile.orbiumore.name": "Orbium Ore",
+      "item.orbofground.name": "Orb of Ground",
+      "tile.enderium.name": "Enderium",
+      "item.enderiumingot.name": "Enderium Ingot",
+      "item.orboffire.name": "Orb of Fire",
+      "itemGroup.tabonsct": "Orbs and Staffs",
+      "item.orboflightning.name": "Orb of Lightning",
+      "item.emptyorb.name": "Empty Orb"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "orbsandstaffs",
+    "modName": "OnS",
+    "version": "1.0.0",
+    "description": "very cool description",
+    "author": "kravataf",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "1.12.2",
+    "credits": "this mod was maded by kravataf using mcreator",
+    "modElementsPackage": "net.mcreator.orbsandstaffs",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000214217
+}

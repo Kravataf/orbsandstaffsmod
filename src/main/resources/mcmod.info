@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "orbsandstaffs",
+    "name": "OnS",
+    "description": "very cool description",
+    "version": "1.0.0",
+    "credits": "this mod was maded by kravataf using mcreator",
+    "logoFile": "",
+    "mcversion": "1.12.2",
+    "url": "https://mcreator.net",
+    "updateUrl": "",
+    "authorList": [
+      "kravataf"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": [],
+    "useDependencyInformation": "true"
+  }
+]

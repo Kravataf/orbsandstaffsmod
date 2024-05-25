@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "orbsandstaffs:blocks/14688185-end-stone_m",
+    "particle": "orbsandstaffs:blocks/14688185-end-stone_m"
+  }
+}

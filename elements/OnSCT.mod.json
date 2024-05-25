@@ -1,0 +1,11 @@
+{
+  "_fv": 6,
+  "_type": "tab",
+  "definition": {
+    "name": "Orbs and Staffs",
+    "icon": {
+      "value": "CUSTOM:OrbOfLightning"
+    },
+    "showSearch": false
+  }
+}
