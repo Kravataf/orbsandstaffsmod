@@ -1,0 +1,78 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 354,
+          "y": 186
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 354,
+          "y": 114
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 462,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Staff Assembler",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Staff Assembler",
+          "x": 264,
+          "y": 87
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "newfurnacegui (5) (1).png",
+          "name": "newfurnacegui (5) (1).png",
+          "x": 400,
+          "y": 141
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Assemble",
+          "width": 160,
+          "height": 40,
+          "name": "Assemble",
+          "x": 427,
+          "y": 192
+        }
+      }
+    ]
+  }
+}

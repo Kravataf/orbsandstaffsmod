@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Orbs And Staffs",
-    "achievementDescription": "Sorcery mod that adds a lot of stuff :P",
+    "achievementDescription": "Sorcery mod that adds a lot of stuff",
     "achievementIcon": {
       "value": "CUSTOM:OrbPurifier"
     },

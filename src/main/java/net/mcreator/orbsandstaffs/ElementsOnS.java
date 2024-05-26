@@ -34,6 +34,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.mcreator.orbsandstaffs.gui.GuiStaffAssemblerGUI;
 import net.mcreator.orbsandstaffs.gui.GuiOrbPurifierGUI;
 
 import java.util.function.Supplier;
@@ -126,6 +127,8 @@ public class ElementsOnS implements IFuelHandler, IWorldGenerator {
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiOrbPurifierGUI.GUIID)
 				return new GuiOrbPurifierGUI.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiStaffAssemblerGUI.GUIID)
+				return new GuiStaffAssemblerGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -133,6 +136,8 @@ public class ElementsOnS implements IFuelHandler, IWorldGenerator {
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiOrbPurifierGUI.GUIID)
 				return new GuiOrbPurifierGUI.GuiWindow(world, x, y, z, player);
+			if (id == GuiStaffAssemblerGUI.GUIID)
+				return new GuiStaffAssemblerGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

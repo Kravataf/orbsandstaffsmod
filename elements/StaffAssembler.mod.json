@@ -2,7 +2,7 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "orbpurifiertexture1",
+    "texture": "staffassemblertexture1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -20,7 +20,7 @@
     "My": 1.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
-    "name": "Orb Purifier",
+    "name": "Staff Assembler",
     "specialInfo": [],
     "hardness": 5.0,
     "resistance": 10.0,
@@ -56,7 +56,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "METAL"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -70,7 +70,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": true,
-    "guiBoundTo": "OrbPurifierGUI",
+    "guiBoundTo": "StaffAssemblerGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,

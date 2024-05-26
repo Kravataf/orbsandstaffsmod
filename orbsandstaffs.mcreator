@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "GUI": 1,
+    "GUI": 2,
     "ENTITY": 2
   },
   "mod_elements": [
@@ -185,6 +185,24 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "StaffAssembler",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StaffAssemblerGUI",
+      "type": "gui",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      }
     }
   ],
   "variable_elements": [],
@@ -199,10 +217,11 @@
       "item.orboflightning.name": "Orb of Lightning",
       "item.emptyorb.name": "Empty Orb",
       "item.orbiumingot.name": "Orbium Ingot",
+      "tile.staffassembler.name": "Staff Assembler",
       "tile.orbpurifier.name": "Orb Purifier",
       "tile.enderium.name": "Enderium",
       "item.enderiumingot.name": "Enderium Ingot",
-      "advancements.orbsandstaffsadvancement.descr": "Sorcery mod that adds a lot of stuff :P",
+      "advancements.orbsandstaffsadvancement.descr": "Sorcery mod that adds a lot of stuff",
       "item.orboffire.name": "Orb of Fire",
       "itemGroup.tabonsct": "Orbs and Staffs"
     }

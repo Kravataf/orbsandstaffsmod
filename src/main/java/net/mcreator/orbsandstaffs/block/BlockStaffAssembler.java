@@ -34,41 +34,41 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.Block;
 
-import net.mcreator.orbsandstaffs.gui.GuiOrbPurifierGUI;
+import net.mcreator.orbsandstaffs.gui.GuiStaffAssemblerGUI;
 import net.mcreator.orbsandstaffs.creativetab.TabOnSCT;
 import net.mcreator.orbsandstaffs.OnS;
 import net.mcreator.orbsandstaffs.ElementsOnS;
 
 @ElementsOnS.ModElement.Tag
-public class BlockOrbPurifier extends ElementsOnS.ModElement {
-	@GameRegistry.ObjectHolder("orbsandstaffs:orbpurifier")
+public class BlockStaffAssembler extends ElementsOnS.ModElement {
+	@GameRegistry.ObjectHolder("orbsandstaffs:staffassembler")
 	public static final Block block = null;
-	public BlockOrbPurifier(ElementsOnS instance) {
-		super(instance, 19);
+	public BlockStaffAssembler(ElementsOnS instance) {
+		super(instance, 23);
 	}
 
 	@Override
 	public void initElements() {
-		elements.blocks.add(() -> new BlockCustom().setRegistryName("orbpurifier"));
+		elements.blocks.add(() -> new BlockCustom().setRegistryName("staffassembler"));
 		elements.items.add(() -> new ItemBlock(block).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		GameRegistry.registerTileEntity(TileEntityCustom.class, "orbsandstaffs:tileentityorbpurifier");
+		GameRegistry.registerTileEntity(TileEntityCustom.class, "orbsandstaffs:tileentitystaffassembler");
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
-				new ModelResourceLocation("orbsandstaffs:orbpurifier", "inventory"));
+				new ModelResourceLocation("orbsandstaffs:staffassembler", "inventory"));
 	}
 	public static class BlockCustom extends Block implements ITileEntityProvider {
 		public BlockCustom() {
 			super(Material.IRON);
-			setUnlocalizedName("orbpurifier");
-			setSoundType(SoundType.GLASS);
+			setUnlocalizedName("staffassembler");
+			setSoundType(SoundType.METAL);
 			setHardness(5F);
 			setResistance(10F);
 			setLightLevel(0F);
@@ -124,7 +124,7 @@ public class BlockOrbPurifier extends ElementsOnS.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (entity instanceof EntityPlayer) {
-				((EntityPlayer) entity).openGui(OnS.instance, GuiOrbPurifierGUI.GUIID, world, x, y, z);
+				((EntityPlayer) entity).openGui(OnS.instance, GuiStaffAssemblerGUI.GUIID, world, x, y, z);
 			}
 			return true;
 		}
@@ -157,7 +157,7 @@ public class BlockOrbPurifier extends ElementsOnS.ModElement {
 
 		@Override
 		public String getName() {
-			return "container.orbpurifier";
+			return "container.staffassembler";
 		}
 
 		@Override
@@ -203,12 +203,13 @@ public class BlockOrbPurifier extends ElementsOnS.ModElement {
 
 		@Override
 		public String getGuiID() {
-			return "orbsandstaffs:orbpurifier";
+			return "orbsandstaffs:staffassembler";
 		}
 
 		@Override
 		public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-			return new GuiOrbPurifierGUI.GuiContainerMod(this.getWorld(), this.getPos().getX(), this.getPos().getY(), this.getPos().getZ(), playerIn);
+			return new GuiStaffAssemblerGUI.GuiContainerMod(this.getWorld(), this.getPos().getX(), this.getPos().getY(), this.getPos().getZ(),
+					playerIn);
 		}
 
 		@Override
