@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "orboflightningtexture1",
+    "texture": "emptyorbtexture1",
     "customModelName": "Normal",
     "name": "Empty Orb",
     "creativeTab": {

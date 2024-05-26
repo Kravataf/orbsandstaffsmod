@@ -1,0 +1,16 @@
+{
+  "group": "orbsandstaffs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "orbsandstaffs:emptyorb"
+    },
+    {
+      "item": "orbsandstaffs:scrolloflightning"
+    }
+  ],
+  "result": {
+    "item": "orbsandstaffs:orboflightning",
+    "count": 1
+  }
+}

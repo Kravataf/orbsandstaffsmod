@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "orbsandstaffs:blocks/orbpurifiertexture1",
+    "particle": "orbsandstaffs:blocks/orbpurifiertexture1"
+  }
+}

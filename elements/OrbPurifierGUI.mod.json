@@ -1,0 +1,51 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 408,
+          "y": 96
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "name": "Slot #1",
+          "x": 381,
+          "y": 186
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 435,
+          "y": 186
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "newfurnacegui (5).png",
+          "name": "newfurnacegui (5).png",
+          "x": 399,
+          "y": 132
+        }
+      }
+    ]
+  }
+}
