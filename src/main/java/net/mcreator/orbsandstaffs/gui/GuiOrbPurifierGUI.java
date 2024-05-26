@@ -24,6 +24,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
+import net.mcreator.orbsandstaffs.procedure.ProcedurePurifyOrbs;
 import net.mcreator.orbsandstaffs.OnS;
 import net.mcreator.orbsandstaffs.ElementsOnS;
 
@@ -62,15 +63,15 @@ public class GuiOrbPurifierGUI extends ElementsOnS.ModElement {
 			TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
-			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 80, 12) {
+			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 107, 12) {
 			}));
-			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 66, 57) {
+			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 89, 57) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 93, 57) {
+			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 125, 57) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -261,7 +262,7 @@ public class GuiOrbPurifierGUI extends ElementsOnS.ModElement {
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
 			this.mc.renderEngine.bindTexture(new ResourceLocation("orbsandstaffs:textures/newfurnacegui (5).png"));
-			this.drawTexturedModalRect(this.guiLeft + 74, this.guiTop + 29, 0, 0, 256, 256);
+			this.drawTexturedModalRect(this.guiLeft + 101, this.guiTop + 29, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -281,6 +282,7 @@ public class GuiOrbPurifierGUI extends ElementsOnS.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
+			this.fontRenderer.drawString("Orb Purifier", 7, 7, -13421773);
 		}
 
 		@Override
@@ -296,6 +298,7 @@ public class GuiOrbPurifierGUI extends ElementsOnS.ModElement {
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 7, this.guiTop + 56, 60, 20, "Purify"));
 		}
 
 		@Override
@@ -410,6 +413,12 @@ public class GuiOrbPurifierGUI extends ElementsOnS.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				ProcedurePurifyOrbs.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(EntityPlayer entity, int slotID, int changeType, int meta, int x, int y, int z) {

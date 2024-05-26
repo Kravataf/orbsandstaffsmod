@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/blocks/stone.png",
+    "icon": {
+      "item": "orbsandstaffs:orbpurifier"
+    },
+    "title": {
+      "translate": "advancements.orbsandstaffsadvancement.title"
+    },
+    "description": {
+      "translate": "advancements.orbsandstaffsadvancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "orbsandstaffsadvancement": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

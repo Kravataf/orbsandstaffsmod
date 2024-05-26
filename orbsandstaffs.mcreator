@@ -161,6 +161,46 @@
       "ids": {
         "0": 1
       }
+    },
+    {
+      "name": "PurifyOrbs",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrbsAndStaffsAdvancement",
+      "type": "achievement",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -170,6 +210,7 @@
       "item.woodenstaff.name": "Wooden Staff",
       "item.scrolloflightning.name": "Scroll Of Lightning",
       "tile.orbiumore.name": "Orbium Ore",
+      "advancements.orbsandstaffsadvancement.title": "Orbs And Staffs",
       "item.orbofground.name": "Orb of Ground",
       "item.orboflightning.name": "Orb of Lightning",
       "item.emptyorb.name": "Empty Orb",
@@ -177,6 +218,7 @@
       "tile.orbpurifier.name": "Orb Purifier",
       "tile.enderium.name": "Enderium",
       "item.enderiumingot.name": "Enderium Ingot",
+      "advancements.orbsandstaffsadvancement.descr": "Sorcery mod that adds a lot of stuff :P",
       "item.orboffire.name": "Orb of Fire",
       "itemGroup.tabonsct": "Orbs and Staffs"
     }
